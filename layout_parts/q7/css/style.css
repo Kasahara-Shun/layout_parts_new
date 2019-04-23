@@ -1,5 +1,97 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after {
+ 	display: block;
+ 	content: "";
+ 	clear: both;
+}
+
+.q1_text {
+	box-sizing: border-box;
+	float: left;
+	font-size: 16px;
+	margin-left: 50px;
+	width: 225px;
+}
+
+.q1_text:first-child {
+	margin-left: 0px;
+}
+
+.q2_inner {
+	display: table
+	margin: 0 auto;
+}
+
+
+.q2_box {
+	display: table-cell;
+	padding-left: 50px;
+	vertical-align: middle;
+}
+
+.q2_box:first-child {
+	padding-left: 0;
+}
+
+.q2_text {
+	box-sizing: border-box;
+	text-align: center;
+	width: 225px;
+	font-size: 16px;
+}
+
+
+.q3_inner {
+	text-align: center;
+	font-size: 0;
+	height: 100%;
+}
+
+.q3_box {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 225px;
+	vertical-align: middle;
+	margin-left: 50px;
+	font-size: 16px;
+}
+
+.q3_box:first-child {
+	margin-left: 0;
+}
+
+
+.q4_inner {
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.q4_box {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 225px;
+}
+
+.q5-wrap-box {
+}
+
+.q5-left-box {
+	display: inline-block;
+	width: 300px;
+	float: left;
+}
+
+.q5-right-box {
+	display: inline-block;
+	margin-left: -300px;
+	width: 100%;
+}
+
+.q5-right-text {
+	margin-left: 350px;
+}
 
 /* 回答はここに書いてね */

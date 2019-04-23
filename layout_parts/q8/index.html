@@ -30,28 +30,28 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleをつける場合は自分で新たにクラスをつけること -->
           <!-- 新たにタグは追加しなくてもできます。 -->
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn small_set">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="color_common">common</div>
+            <div class="color_error">error</div>
+            <div class="color_disabled">disabled</div>
+            <div class="color_shadow">shadow</div>
           </div>
 
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn middle_set">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="color_common">common</div>
+            <div class="color_error">error</div>
+            <div class="color_disabled">disabled</div>
+            <div class="color_shadow">shadow</div>
           </div>
 
-          <div class="q8 q8--btn">
+          <div class="q8 q8--btn large_set">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="color_common">common</div>
+            <div class="color_error">error</div>
+            <div class="color_disabled">disabled</div>
+            <div class="color_shadow">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -98,8 +98,89 @@
           -->
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
-          <div class="q8">
-            
+          <div class="q8 q8_wrapper">
+            <div class="q8_title">
+              <p class="q8_title_text">Form Exercise</p>
+            </div>
+
+              <div class="form_wrap">
+                <form action="http://gizumo-inc.github.io/sample/front-lesson/layout_parts_new/q8/" method="get" accept-charset="utf-8" class="form_main clearfix">
+
+                  <div class="user_status">
+                    <ul>
+                      <li class="clearfix form_contents">
+                        <p class="form_title">名前
+                          <span class="must_item">*</span>
+                        </p>
+                        <div class="form_text_wrap">
+                          <input class="form_name form_reset" type="text" name="name" required>
+                        </div>
+                      </li>
+
+                      <li class="clearfix form_contents">
+                        <p class="form_title">性別</p>
+                        <div class="form_gender_wrap">
+                          <label>
+                            <input class="form_gender_button" type="radio" name="gender" value="male" >
+                              <span>男性</span>
+                          </label>
+                          <label>
+                            <input class="form_gender_button"  type="radio" name="gender" value="female">
+                              <span>女性</span>
+                          </label>
+                        </div>
+                      </li>
+
+                      <li class="clearfix form_contents">
+                        <p class="form_title">出身</p>
+                        <div class="form_hometown_wrap">
+                          <select name="hometown" value="hometown" class="form_hometown form_reset">
+                            <option value="tokyo">東京</option>
+                            <option value="saitama">埼玉</option>
+                            <option value="tiba">千葉</option>
+                            <option value="kanagawa">神奈川</option>
+                          </select>
+                        </div>
+                      </li>
+
+                      <li class="clearfix form_contents">
+                        <p class="form_title">Ｅメール
+                          <span class="must_item">*</span>
+                        </p>
+                        <div class="form_email_wrap">
+                          <input type="email" class="form_email form_reset" name="email" placeholder="ex)hoge@gmail.com" required>
+                        </div>
+                      </li>
+
+                      <li class="clearfix form_contents">
+                        <p class="form_title">電話番号</p>
+                        <div class="form_tel_wrap">
+                          <input type="tel" name="tel" class="form_tel form_reset" placeholder="ex)0801234567">
+                        </div>
+                      <li>
+                      <li class="clearfix form_contents">
+                        <div class="form_twenty_wrap">
+                          <label>
+                            <input type="checkbox" name="twenty" value="true" class="form_twenty_button">
+                            <span>20歳以上です</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="form_submit_wrap">
+                     <button type="submit" value="送信" class="form_submit_button form_submit_button_reset">送信</button>
+                    </div>
+                  </div>
+
+                  <div class="form_comment_wrap">
+                    <textarea name="massage" class="form_comment form_reset" placeholder="何かあれば入力してください。"></textarea>
+                  </div>
+
+
+
+                  </form>
+              </div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>

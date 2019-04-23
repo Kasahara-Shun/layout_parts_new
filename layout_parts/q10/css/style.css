@@ -2,4 +2,48 @@
 
 /* 回答はここに書いてね */
 
+.balloon {
+	margin: 0 auto;
+	width: 500px;
+	padding: 20px;
+	position: relative;
+	border: solid 5px #222;
+	border-radius: 30px;
+	line-height: 16px;
+}
+
+.balloon:before {
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: solid 20px #222;
+	border-left: solid 20px transparent;
+	border-right: solid 20px transparent;
+	border-bottom: solid 20px transparent;
+	position: absolute;
+	top: 100%;
+	left: 40px;
+}
+
+.balloon:after {
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: solid 10px #fff;
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	border-bottom: solid 10px transparent;
+	position: absolute;
+	top: 100%;
+	left: 50px;
+}
+
+
+.q10-text {
+	font-size: 16px;
+	word-break: break-all;
+}
+
 /* 回答はここに書いてね */

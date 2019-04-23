@@ -1,5 +1,400 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.small_set div {
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 16px;
+	height: 26px;
+	padding: 5px 15px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin: 0 5px;
+}
 
+
+.middle_set div {
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 20px;
+	height: 32px;
+	padding: 6px 20px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin: 0 5px;
+}
+
+
+.large_set div {
+	display: inline-block;
+	border-radius: 7px;
+	font-size: 24px;
+	height: 38px;
+	padding: 7px 25px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	margin: 0 5px;
+}
+
+.color_common {
+	background-color: #00bcd4;
+	color: white;
+}
+
+.color_error {
+	background-color: #ff4081;
+	color: white;
+}
+
+.color_disabled {
+	background-color: #e5e5e5;
+	color: white;
+}
+
+.color_shadow {
+	box-shadow: 0 1px 6px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.12);
+}
 /* 回答はここに書いてね */
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+  vertical-align: middle;
+}
+
+.q8_wrapper {
+	width: 700px;
+	margin: 0 auto;
+	background-color: #ecf1f2;
+	padding: 20px;
+}
+
+.form_wrap {
+	margin-top: 20px;
+}
+
+.user_status {
+	width: 300px;
+	float: left;
+}
+
+.q8_title_text {
+	position: relative;
+	display: inline-block;
+	padding-right: 10px;
+	background-color: #ECF1F2;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.q8_title {
+	position: relative;
+}
+
+.q8_title::before {
+	position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    content: "";
+}
+
+/* フォームのリセット*/
+
+.form_reset {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.form_reset:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+.form_contents {
+	margin-top: 20px;
+	position: relative;
+	vertical-align: baseline;
+}
+
+.form_contents:first-child {
+	margin-top: 0;
+}
+
+.form_title {
+	font-size: 16px;
+	text-align: right;
+	float: left;
+	width: 100px;
+}
+
+.must_item {
+	color: red;
+	font-size: 16px;
+}
+
+/* 名前入力欄の編集*/
+
+.form_name {
+	width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+}
+
+.form_text_wrap {
+	float: right;
+	width: 180px;
+}
+
+.form_name:focus {
+  box-shadow: 0 0 3px 4px #00bcd4;
+}
+
+/* アドレス入力欄の編集*/
+
+.form_email {
+	width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+}
+
+.form_email_wrap {
+	float: right;
+	width: 180px;
+}
+
+.form_email:focus {
+  box-shadow: 0 0 3px 4px #00bcd4;
+}
+/* 電話番号入力欄の編集*/
+
+.form_tel {
+	width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+}
+
+.form_tel_wrap {
+	float: right;
+	width: 180px;
+}
+
+.form_tel:focus {
+  box-shadow: 0 0 3px 4px #00bcd4;
+}
+
+/* ラジオボタンの修正 */
+
+.form_gender_button {
+	display: none;
+}
+
+.form_gender_button + span {
+	display: inline-block;
+	position: relative;
+	margin:0 0.2em 0;
+	padding: 0 0 0 1.2em;
+}
+
+.form_gender_button + span::before {
+	-webkit-transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 16px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+}
+
+.form_gender_button + span::after {
+	-webkit-transform: translateY(-50%);
+	background: #00bcd4;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	content: "";
+	height: 2px;
+	left: 5px;
+	opacity: 0;
+	padding: 2px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 2px;
+}
+
+.form_gender_button:checked + span::after {
+	opacity: 1;
+}
+
+.form_gender_wrap {
+	float: right;
+	width: 180px;
+}
+
+/*出身地（セレクトボックス）のデザイン */
+
+.form_hometown {
+	width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.form_hometown_wrap {
+	float: right;
+	width: 180px;
+}
+
+.form_hometown_wrap::after {
+	display: block;
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	border-right: 2px solid #E5E5E5;
+	border-bottom: 2px solid #E5E5E5;
+	transform: rotate(45deg);
+	content: "";
+	pointer-events: none;
+}
+
+/*チェックボックスの修正*/
+
+.form_twenty_button {
+	display: none;
+}
+
+.form_twenty_button + span {
+	display: inline-block;
+	position: relative;
+	margin:0 0.2em 0;
+	padding: 0 0 0 1.2em;
+}
+
+.form_twenty_button + span::before {
+	-webkit-transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid #ccc;
+	content: "";
+	display: block;
+	height: 16px;
+	left: -10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+}
+
+.form_twenty_button + span::after {
+	-webkit-transform: translateY(-50%);
+	background: transparent;
+	border: 3px solid;
+	border-color: transparent #00bcd4 #00bcd4 transparent;
+	content: "";
+	height: 16px;
+	left: -5px;
+	opacity: 0;
+	position: absolute;
+	top: 10%;
+	transform: translateY(-50%) rotate(45deg);
+	width: 8px;
+}
+
+.form_twenty_button:checked + span::after {
+	opacity: 1;
+}
+
+.form_twenty_wrap {
+	float: right;
+	width: 180px;
+	text-align: right;
+}
+
+/* 送信ボタン編集　*/
+
+.form_submit_button_reset {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+	box-shadow: none;
+}
+
+.form_submit_button {
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #00BCD4;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.form_submit_wrap {
+	text-align: right;
+	margin-top: 20px;
+}
+
+/* コメントフォーム編集*/
+.form_comment {
+	width: 380px;
+	height: 203px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form_comment_wrap {
+	display: inline-block;
+	float: right;
+}
+
+.form_comment:focus {
+  box-shadow: 0 0 3px 4px #00bcd4;
+}
