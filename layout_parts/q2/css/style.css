@@ -9,24 +9,18 @@
 	width: 940px;
 }
 
-.baloon_img {
+.left_img {
 	float: left;
 	margin: 0 20px 10px 0;
 }
 
-.baloon_text {
+.content_text {
 	font-size: 18px;
 	line-height: 22px;
 	word-break: break-all;
 }
 
-.kamon_text {
-	font-size: 18px;
-	line-height: 22px;
-	word-break: break-all;
-}
-
-.kamon_img {
+.right_img {
 	float: right;
 	margin: 0 0 10px 20px;
 }

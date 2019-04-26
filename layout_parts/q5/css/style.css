@@ -18,6 +18,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
 }
 
 .block-1 {
@@ -98,5 +99,8 @@
 .block-9 {
 	background-color: #2b69a3;
 	position: fixed;
+	top: 10px;
+	left: 10px;
 }
 /* 回答はここに書いてね */
+/* block-9の位置修正 */

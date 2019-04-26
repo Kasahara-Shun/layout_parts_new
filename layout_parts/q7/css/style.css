@@ -7,7 +7,7 @@
  	clear: both;
 }
 
-.q1_text {
+.float_text {
 	box-sizing: border-box;
 	float: left;
 	font-size: 16px;
@@ -15,27 +15,27 @@
 	width: 225px;
 }
 
-.q1_text:first-child {
+.float_text:first-child {
 	margin-left: 0px;
 }
 
-.q2_inner {
-	display: table
+.table_inner {
+	display: table;
 	margin: 0 auto;
 }
 
 
-.q2_box {
+.table_box {
 	display: table-cell;
 	padding-left: 50px;
 	vertical-align: middle;
 }
 
-.q2_box:first-child {
+.table_box:first-child {
 	padding-left: 0;
 }
 
-.q2_text {
+.table_text {
 	box-sizing: border-box;
 	text-align: center;
 	width: 225px;
@@ -43,13 +43,13 @@
 }
 
 
-.q3_inner {
+.inline_block_inner {
 	text-align: center;
 	font-size: 0;
 	height: 100%;
 }
 
-.q3_box {
+.inline_block_box {
 	display: inline-block;
 	box-sizing: border-box;
 	width: 225px;
@@ -58,40 +58,40 @@
 	font-size: 16px;
 }
 
-.q3_box:first-child {
+.inline_block_box:first-child {
 	margin-left: 0;
 }
 
 
-.q4_inner {
+.flex_inner {
 	height: 100%;
 	display: flex;
 	align-items: flex-end;
+	justify-content: space-around;
 }
 
-.q4_box {
+.flex_box {
 	box-sizing: border-box;
-	margin: 0 auto;
 	width: 225px;
 }
+/* margin 0 autoを削除・justfy-contentで中央寄せ*/
 
-.q5-wrap-box {
-}
-
-.q5-left-box {
+.ngmargin_left_box {
 	display: inline-block;
 	width: 300px;
 	float: left;
 }
 
-.q5-right-box {
+.ngmargin_right_box {
 	display: inline-block;
 	margin-left: -300px;
 	width: 100%;
 }
 
-.q5-right-text {
+.ngmargin_right_text {
 	margin-left: 350px;
 }
 
 /* 回答はここに書いてね */
+/* クラス名を内容に準じたものに変更・不要なクラスを削除 */
+/* .q2_innerの閉じタグ忘れを修正*/

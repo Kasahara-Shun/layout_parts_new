@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.small_set div {
+.small_set {
 	display: inline-block;
 	border-radius: 3px;
 	font-size: 16px;
@@ -13,7 +13,7 @@
 }
 
 
-.middle_set div {
+.middle_set {
 	display: inline-block;
 	border-radius: 5px;
 	font-size: 20px;
@@ -25,7 +25,7 @@
 }
 
 
-.large_set div {
+.large_set {
 	display: inline-block;
 	border-radius: 7px;
 	font-size: 24px;
@@ -372,6 +372,11 @@
     line-height: 26px;
 }
 
+.form_submit_button:active {
+    background-color: #fff;
+    color: #00bcd4;
+}
+
 .form_submit_wrap {
 	text-align: right;
 	margin-top: 20px;
@@ -398,3 +403,7 @@
 .form_comment:focus {
   box-shadow: 0 0 3px 4px #00bcd4;
 }
+
+/* ボタンのスタイルを指定するクラスを直接divタグ内に追記*/
+/* buttonにactiveでの挙動を追記 */
+/*160行目<li>は閉じタグなのに／を入れ忘れていたため追記*/
